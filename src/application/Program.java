@@ -17,8 +17,8 @@ public class Program {
 		Scanner sc = new Scanner(System.in);
 		
 		List<TaxPayer> list = new ArrayList<>();
-		
-		System.out.print("Enter the numberof taxplayer: ");
+	
+		System.out.print("Enter the number of taxplayer: ");
 		int n = sc.nextInt();
 		for(int i=1; i<=n; i++) {
 			System.out.println("Taxpayer #" + i + " data:");
@@ -29,7 +29,7 @@ public class Program {
 			System.out.print("Anual income: ");
 			Double anualIncome = sc.nextDouble();
 			if(ch == 'i') {
-				System.out.println("Health expenditures: ");
+				System.out.print("Health expenditures: ");
 				Double healthExpenditures = sc.nextDouble();
 				Individual x = new Individual(name, anualIncome, healthExpenditures);
 				list.add(x);
